@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'intro_rust_gbase_2_line';
-    src: url('introrustg-base2line-webfont.woff2') format('woff2'),
-         url('introrustg-base2line-webfont.woff') format('woff');
+    src: url('../fonts/introrustg-base2line-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -12,8 +11,7 @@
 
 @font-face {
     font-family: 'source_sans_proextralight';
-    src: url('sourcesanspro-extralight-webfont.woff2') format('woff2'),
-         url('sourcesanspro-extralight-webfont.woff') format('woff');
+    src: url('../fonts/sourcesanspro-extralight-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -31,11 +29,11 @@ body {
     justify-content: center;
 }
 
-img {
+img.bgphoto {
     position: relative;
     display: block;
     height: 100%;
-    width: 30%;
+    width: 100%;
 }
 
 div.container {
@@ -126,5 +124,14 @@ button {
     background-color: green;
     color: white;
     font-size: 15px;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 70px;
+    height: 200px;
+    width: 437.328px;
+    opacity: 0.7;
 }
 
