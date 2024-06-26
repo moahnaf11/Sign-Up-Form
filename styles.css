@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'intro_rust_gbase_2_line';
+    src: url('introrustg-base2line-webfont.woff2') format('woff2'),
+         url('introrustg-base2line-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_proextralight';
+    src: url('sourcesanspro-extralight-webfont.woff2') format('woff2'),
+         url('sourcesanspro-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+img {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 30%;
+}
+
+div.container {
+    background-color: #F4DFF5;
+    width: 600px;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-family: "intro_rust_gbase_2_line", sans-serif;
+    padding-left: 20px;
+    margin-top: 70px;
+}
+
+p {
+    box-sizing: border-box;
+    font-family: 'source_sans_proextralight', sans-serif;
+    font-weight: 600;
+    padding-right: 70px;
+    margin-top: 20px;
+    padding-left: 20px;
+
+}
+
+form h1 {
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+form {
+    font-size: 10px;
+    margin-top: 20px;
+    background-color: white;
+    padding-left: 20px;
+    margin-top: 40px;
+    padding: 30px;
+    box-shadow: 0 2px 9px 1px black;
+    font-size: 12px;
+}
+
+div.inputcontainer {
+    display: flex;
+    gap: 20px;
+
+}
+
+div.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 20px;
+    padding-left: 5px;
+    font-size: 12px;
+    min-width: 200px
+}
+
+input:focus {
+    outline: 3px solid blue;;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+
