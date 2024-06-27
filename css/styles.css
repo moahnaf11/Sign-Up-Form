@@ -29,8 +29,12 @@ body {
     justify-content: center;
 }
 
-img.bgphoto {
+div.imagecontainer {
     position: relative;
+
+}
+
+img.bgphoto {
     display: block;
     height: 100%;
     width: 100%;
@@ -131,7 +135,7 @@ button {
     position: absolute;
     top: 70px;
     height: 200px;
-    width: 437.328px;
+    width: 100%;
     opacity: 0.7;
 }
 
