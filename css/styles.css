@@ -105,17 +105,22 @@ input {
     min-width: 200px
 }
 
-input:focus {
-    outline: 3px solid blue;;
-    box-shadow: 2px 2px 2px 2px grey;
+input:invalid:focus {
+    outline: none;
+    border: 2px solid red;
 }
 
-input:invalid {
-    border: 1px solid red;
+input:valid:focus {
+    outline: none;
+    border: 2px solid green;
 }
 
-input:valid {
-    border: 1px solid green;
+input:valid:not(:focus) {
+    border: 2px solid green;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid red;
 }
 
 button {
@@ -128,6 +133,7 @@ button {
     background-color: green;
     color: white;
     font-size: 15px;
+    border: none;
 }
 
 .logo {
